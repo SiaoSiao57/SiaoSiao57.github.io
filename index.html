@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Página de SIAO SIAO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            background: linear-gradient(180deg, #4b0082, #000000);
+        }
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .parallax {
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: repeat;
+            animation: moveBackground 20s linear infinite;
+        }
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 1000px; }
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            margin-top: 30px;
+        }
+        .btn {
+            background-color: #5e2d79;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #8a3ab9;
+        }
+        #redes, #streams, #contenido, #musica {
+            background-color: #1e1e1e;
+        }
+        ul.social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul.social-links li {
+            margin: 10px 0;
+        }
+        ul.social-links li a {
+            color: #8a3ab9;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        ul.social-links li a:hover {
+            text-decoration: underline;
+        }
+        #contenido img {
+            max-width: 80%;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(138,58,185,0.7);
+        }
+        iframe.spotify-player {
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(138,58,185,0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección Home -->
+    <section class="parallax" id="home">
+        <h1>Bienvenido a la página web de SIAO SIAO</h1>
+        <div class="btn-container">
+            <a href="#redes" class="btn">Redes Sociales</a>
+            <a href="#streams" class="btn">Streams</a>
+            <a href="#contenido" class="btn">Contenido</a>
+            <a href="#musica" class="btn">Mi Música</a>
+        </div>
+    </section>
+
+    <!-- Sección Redes Sociales -->
+    <section id="redes">
+        <h2>Redes Sociales</h2>
+        <ul class="social-links">
+            
+            <li><a href="https://twitter.com/siao_oficial" target="_blank" rel="noopener">Twitter</a></li>
+            <li><a href="https://instagram.com/e_kimdracula57_/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://tiktok.com/@siao_siao_oficial" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+    </section>
+
+    <!-- Sección Streams -->
+    <section id="streams">
+        <h2>Streams</h2>
+        <ul class="social-links">
+            <li><a href="https://twitch.tv/siao_siao_oficial" target="_blank" rel="noopener">Twitch</a></li>
+            <li><a href="https://youtube.com/@SIAO_SIAO_oficialYT" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+<iframe src="https://player.kick.com/siao-siao-oficial" height="720" width="1280" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+</section>
+
+    <!-- Sección Contenido -->
+    <section id="contenido">
+        <h2>Contenido</h2>
+        <p>Aquí puedes ver mi videos, fotos y proyectos interesantes.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6JWn-pGy2jw?si=TutUej6c9LPiqras" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q43a4tBFBjI?si=bdPHoARI8Izwatsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+    <!-- Sección Mi Música -->
+    <section id="musica">
+        <h2>Mi Música</h2>
+        <p>Disfruta de mi música aquí:</p>
+        
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2093550984&color=%238f00ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/etiel-oliva" title="SIAO SIAO" target="_blank" style="color: #cccccc; text-decoration: none;">SIAO SIAO</a> · <a href="https://soundcloud.com/etiel-oliva/whispers-of-sounds" title="whispers of sounds" target="_blank" style="color: #cccccc; text-decoration: none;">whispers of sounds</a></div>
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2044206537&color=%238f00ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/etiel-oliva" title="SIAO SIAO" target="_blank" style="color: #cccccc; text-decoration: none;">SIAO SIAO</a> · <a href="https://soundcloud.com/etiel-oliva/sets/a-dream-far-from-fulfilled" title="A dream far from fulfilled" target="_blank" style="color: #cccccc; text-decoration: none;">A dream far from fulfilled</a></div>
+
+    </section>
+
+    <script>
+        // Efecto de aparición al hacer scroll
+        const sections = document.querySelectorAll('section');
+
+        function mostrarSecciones() {
+            const triggerBottom = window.innerHeight / 5 * 4;
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if(sectionTop < triggerBottom) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', mostrarSecciones);
+
+        // Mostrar secciones al cargar la página
+        mostrarSecciones();
+    </script>
+
+</body>
+</html>
